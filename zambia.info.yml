@@ -1,0 +1,16 @@
+name: Drupal
+type: theme
+description: A custom theme about Zambia - by Boniface C Mwanza
+package: Custom
+core_version_requirement: ^8 || ^9
+libraries:
+  - zambia/style
+base theme: classy
+regions:
+  navbar: Navigation
+  land: Home
+  content: 'Content'
+  article: Page Content
+  footer: Page Footer
+
+

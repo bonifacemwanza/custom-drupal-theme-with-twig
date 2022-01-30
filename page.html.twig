@@ -1,0 +1,105 @@
+<html>
+  <head>
+      <title>welcome to Zambia</title>
+      <script src="https://use.fontawesome.com/f96279069d.js"></script>
+      <link rel="stylesheet" type="text/css" src="./style.css" />  
+      {{ attach_library('zambia/global-styling') }}
+  </head>
+  <body class="root">
+        <div class="header_wrapper">
+            <div class="header_container">
+                Zambia
+            </div>
+            <div class="nav_links">
+                <a>Home</a>
+                <a>Adventure</a>
+                <a>Contact</a>
+            </div>
+            <div class="nav_links_mobile_wrapper">
+                <div class="open_close_icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="nav_links_mobile scale-up-center">
+                    <div class="nav_links_mobile_container">
+                        <a>Home</a>
+                        <a>Adventure</a>
+                        <a>Contact</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        {{page.land}}
+        <div class="header_background">
+            <div class="header_texts"> 
+                 <p>Welcome To Zambia <br /> A Land Of The Free</p>
+            </div>
+
+        </div>
+      
+        <div class="section_padding main_sections">
+            <div class="what_to_do_heading">
+                <h2>What to try out in Zambia</h2>
+            </div>
+            <div class="what_to_do">
+                <div class="what_to_do_wrapper">
+                    <div class="what_to_do_card">
+                        <p>Sky Diving</p>
+                    </div>
+                    <div class="what_to_do_card">
+                        <p>Sky Diving</p>
+                    </div>
+                    <div class="what_to_do_card">
+                        <p>Sky Diving</p>
+                    </div>
+                </div>
+            </div>
+             {{page.content}}
+            <div class="nice_places">
+                <div class="nice_places_wrapper">
+                    <div class="nice_places_card">
+                         <h1>About Zambia</h1>
+                         <p>Zambia (/ˈzæmbiə, ˈzɑːm-/), officially the Republic of Zambia (Bemba: Icalo ca Zambia; Tonga: Cisi ca Zambia; Tumbuka: Chalo cha Zambia; Lozi: Naha ya Zambia; Chichewa: Dziko la Zambia), is a landlocked country at the crossroads of Central, Southern and East Africa.[10] Its neighbours are the Democratic Republic of the Congo to the north, Tanzania to the north-east, Malawi to the east, Mozambique to the southeast, Zimbabwe and Botswana to the south, Namibia to the southwest, and Angola to the west. The capital city of Zambia is Lusaka, located in the south-central part of Zambia. The population is concentrated mainly around Lusaka in the south and the Copperbelt Province to the north, the core economic hubs of the country.</p>
+                         <a href="https://en.wikipedia.org/wiki/Zambia">Read More ...</a>
+                    </div>
+                    <div class="nice_places_card">
+                        <h1>Tourism in Zambia</h1>
+                        <p>Zambia’s tourism industry is one of the country’s growth potential areas. It has been given the non-traditional export status and is receiving a lot of support from the Government by way of infrastructure development, promotion of increased private sector participation, as well as attractive tax incentives for all investments in the sector.[6]
+
+                            Hunting is also an important part of the Zambian tourist industry. Though the country banned all hunting in January 2013 amid concerns of corruption and over hunting of certain species, it legalized hunting again for most species of plains game in 2014. Additionally, the Zambian Tourism Minister announced that leopards may be legally hunted starting in 2015 and lions may be hunted again beginning in 2016.</p>
+                            <a href="https://en.wikipedia.org/wiki/Tourism_in_Zambia">Read More ...</a>
+                   </div>
+                </div>
+                {{page.artcle}}
+            </div>
+             
+       
+           
+        </div>
+        <div class="footer">
+            <div class="foooter_text">
+                {{page.footer}}
+                welcome to zambia 2022 All rights reserved 
+
+            </div>
+        </div>
+        <script>
+            let menuState = false;
+             const openMenu =()=> {
+
+                 if(!menuState){
+                    document.querySelector(".open_close_icon").innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+                    menuState = true;
+                    document.querySelector(".nav_links_mobile").style.display = "flex"
+
+                 } else {
+                    document.querySelector(".open_close_icon").innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
+                    menuState = false;
+                    document.querySelector(".nav_links_mobile").style.display = "none"
+                 }
+
+             }
+        </script>
+  </body>
+</html>
